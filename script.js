@@ -26,3 +26,17 @@ const CONFIG = {
 // console.log(Chart)
 
 new Chart(MY_CHART,CONFIG);
+
+anime({
+  targets:MY_CHART,
+  scale:1.5,
+  duration:3000,
+})
+
+setTimeout(()=>{
+  anime({
+    targets:MY_CHART,
+    scale:1,
+    duration:5000
+  })
+},3000);
